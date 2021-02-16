@@ -1,0 +1,15 @@
+Nome: Maria Luisa Santos Moreno Sanches
+Site: Sushi de Tempura!
+
+O objetivo principal do site é apresentar os animes que você viu, ou pretende ver, em seu perfil. O catálogo de animes do site é compartilhado, de modo que os outros usuários podem realizar modificações nos animes, como adicionar, remover e editar. Assim, outras pessoas podem descobrir novos animes.
+
+A página inicial é de login, a qual cada usuário poderá acessar seu perfil. Caso seja um novo membro, clique em "registre-se" antes.
+
+A página de perfil mostra os animes vinculados ao login do usuário, e também uma opção de adicionar e remover animes de perfil.
+
+Caso o usuário deseje adicionar um anime que não esteja no catálogo, basta ir para a página de Catálogo e adicioná-lo lá. Caso alguma informação esteja equivocada, o usuário também poderá editar o catálogo, assim como remover opções.
+
+== Links do site ==
+Página inicial:http://sushidetempura.ueuo.com/index.html
+Página de Catálogo: http://sushidetempura.ueuo.com/catalogo.php
+Demais atividades: http://sushidetempura.ueuo.com/menu.html

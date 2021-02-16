@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <title>Amigo Secreto</title>
+    <link rel="icon" type="image/png" href="favicon_sushi.png" />
+    <!--Bootstrap CSS-->
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</head>
+<style>
+    body {
+        margin: 0;
+        padding: 0;
+        background-image: url("imagem_fundo.jpg");
+        height: 100vh;
+    }
+    
+    #login .container #login-row #login-column #login-box {
+        margin-top: 120px;
+        max-width: 600px;
+        height: 270px;
+        border: 1px solid #9C9C9C;
+        background-color: #EAEAEA;
+    }
+    
+    #login .container #login-row #login-column #login-box #login-form {
+        padding: 20px;
+    }
+    
+    #login .container #login-row #login-column #login-box #login-form #register-link {
+        margin-top: -75px;
+    }
+    
+    .corvermelha {
+        color: #C11C1C!important;
+    }
+</style>
+
+<body>
+    <!--Navbar do Bootstrap-->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href="http://sushidetempura.ueuo.com/about.html">
+            <img src="favicon_sushi.png" width="30" height="30" class="d-inline-block align-top"> Sushi de Tempura!
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav">
+                <a class="nav-item nav-link active" href="http://sushidetempura.ueuo.com/menu.html">Home</a>
+                <a class="nav-item nav-link" href="mailto:marialuisasmoreno@hotmail.com">Contato</a>
+            </div>
+        </div>
+        <span class="navbar-text">
+            <a href="http://sushidetempura.ueuo.com/perfil.html">Maria Moreno</a>
+            <img src="profile_image.png" width="30" height="30">
+        </span>
+    </nav>
+
+    <br>
+
+    <div align="center">
+        <img src="" class="razer" id="imageoption" width="700" height="700">
+    </div>
+</body>
+
+</html>
+
+<script>
+    $(document).ready(function() {
+        // função pra ler querystring (parametro da url)
+        function queryString(parameter) {
+            var loc = location.search.substring(1, location.search.length);
+            var param_value = false;
+            var params = loc.split("&");
+            for (i = 0; i < params.length; i++) {
+                param_name = params[i].substring(0, params[i].indexOf('='));
+                if (param_name == parameter) {
+                    param_value = params[i].substring(params[i].indexOf('=') + 1)
+                }
+            }
+            if (param_value) {
+                return param_value;
+            } else {
+                return undefined;
+            }
+        }
+
+        // Pessoa sorteada
+        var nome = queryString("sorteado");
+
+        // Arquivo com a foto
+        var arquivo = 'Amigo_Secreto/' + nome + '.jpg';
+
+        $('#imageoption').attr('src', arquivo);
+    });
+</script>

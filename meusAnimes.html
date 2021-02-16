@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <title>Meus Animes!</title>
+    <link rel="icon" type="image/png" href="favicon_sushi.png" />
+    <!--Bootstrap CSS-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</head>
+<style>
+    /* Make the image fully responsive */
+    
+    .carousel-inner img {
+        width: 100%;
+        height: 100%;
+    }
+</style>
+
+<body>
+    <!--Navbar do Bootstrap-->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href="http://sushidetempura.ueuo.com/about.html">
+            <img src="favicon_sushi.png" width="30" height="30" class="d-inline-block align-top"> Sushi de Tempura!
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav">
+                <a class="nav-item nav-link active" href="http://sushidetempura.ueuo.com/menu.html">Home</a>
+                <a class="nav-item nav-link" href="mailto:marialuisasmoreno@hotmail.com">Contato</a>
+            </div>
+        </div>
+        <span class="navbar-text">
+            <a href="http://sushidetempura.ueuo.com/perfil.html">Maria Moreno</a>
+            <img src="profile_image.png" width="30" height="30">
+        </span>
+    </nav>
+
+    <br>
+    <div class="container">
+        <h1>Meus Animes!</h1>
+        <div id="demo" class="carousel slide" data-ride="carousel">
+            <ul class="carousel-indicators">
+                <li data-target="#demo" data-slide-to="0" class="active"></li>
+                <li data-target="#demo" data-slide-to="1"></li>
+                <li data-target="#demo" data-slide-to="2"></li>
+                <li data-target="#demo" data-slide-to="3"></li>
+                <li data-target="#demo" data-slide-to="4"></li>
+            </ul>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <a href="http://sushidetempura.ueuo.com/yuri_on_ice.html" target="_blank">
+                        <img src="yuri_on_ice_slider.jpg" alt="Yuri on Ice" width="1100" height="500">
+                    </a>
+                    <div class="carousel-caption">
+                        <h3>Yuri!!! On Ice</h3>
+                        <p>"We were born to make history!"</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <a href="http://sushidetempura.ueuo.com/banana_fish.html" target="_blank">
+                        <img src="banana_fish_slider.jpg" alt="Banana Fish" width="1100" height="500">
+                    </a>
+                    <div class="carousel-caption">
+                        <h3>Banana Fish</h3>
+                        <p>"My soul will always be with you."</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <a href="http://sushidetempura.ueuo.com/naruto.html" target="_blank">
+                        <img src="naruto_slider.jpg" alt="Naruto" width="1100" height="500">
+                    </a>
+                    <div class="carousel-caption">
+                        <h3>Naruto</h3>
+                        <p>"Desista de me fazer desistir!"</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <a href="http://sushidetempura.ueuo.com/sailor_moon.html" target="_blank">
+                        <img src="sailor_moon_slider.jpg" alt="Sailor Moon" width="1100" height="500">
+                    </a>
+                    <div class="carousel-caption">
+                        <h3>Sailor Moon</h3>
+                        <p>"O futuro e algo que voce mesmo faz. Voce tem que acreditar nele."</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <a href="http://sushidetempura.ueuo.com/my_hero_academia.html" target="_blank">
+                        <img src="my_hero_academia_slider.jpg" alt="My Hero Academia" width="1100" height="500">
+                    </a>
+                    <div class="carousel-caption">
+                        <h3>My Hero Academia</h3>
+                        <p>"I am here."</p>
+                    </div>
+                </div>
+            </div>
+            <a class="carousel-control-prev" href="#demo" data-slide="prev">
+                <span class="carousel-control-prev-icon"></span>
+            </a>
+            <a class="carousel-control-next" href="#demo" data-slide="next">
+                <span class="carousel-control-next-icon"></span>
+            </a>
+        </div>
+    </div>
+</body>
+
+</html>
